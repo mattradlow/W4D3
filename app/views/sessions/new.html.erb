@@ -1,0 +1,15 @@
+<h1>Welcome to the Login Page</h1>
+
+
+
+<form action="<%=session_url%>" method="POST">
+<input type="hidden" name="authenticity" value="<%=form_authenticity_token%>">
+
+<label for="user_name">Username</label>
+<input type="text" value="<%=@user.user_name%>" id="user_name" name="user[user_name]">
+<br>
+<label for="password">Password</label>
+<input type="password" value="" id="password" name="user[password]">
+<br>
+<input type="submit" value="Login...you idiot">
+</form>

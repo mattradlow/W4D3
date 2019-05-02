@@ -1,0 +1,18 @@
+
+--check for errors
+
+<h1>Create New Renter</h1>
+
+<form action="<%=users_url%>" method="POST">
+<input type="hidden" name="authenticity" value="<%=form_authenticity_token%>">
+
+<label for="user_name">Username</label>
+<input type="text" value="" id="user_name" name="user[user_name]">
+<br>
+<label for="password">Password</label>
+<input type="password" value="" id="password" name="user[password]">
+<br>
+<input type="submit" value="Create New User">
+</form>
+
+
